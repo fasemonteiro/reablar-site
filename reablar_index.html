@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fisioterapia Domiciliar em BH | ReabLar – Neuro e Geriatria</title>
+  <meta name="description" content="Fisioterapia domiciliar em Belo Horizonte e região. Neurofuncional e geriatria. Avaliação em casa e plano de cuidado personalizado. Agende pelo WhatsApp." />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="ReabLar – Fisioterapia Domiciliar" />
+  <meta property="og:description" content="Reabilitação no conforto do lar. Neuro e Geriatria em BH." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.reablar.com.br/" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <style>
+    :root{
+      --teal:#16A6A3; /* primário */
+      --teal-700:#0E7C7A;
+      --accent:#0EA5E9; /* ciano leve */
+      --gray-900:#2E2E2E;
+      --gray-600:#666;
+      --gray-100:#F5F7F9;
+      --white:#fff;
+      --radius:16px;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --maxw:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;color:var(--gray-900);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;background:var(--white)}
+    a{color:var(--teal)} a:hover{color:var(--accent)}
+    h1,h2,h3{font-family:Montserrat,Inter,system-ui,sans-serif;line-height:1.2;margin:0 0 .3rem}
+    h1{font-size:clamp(28px,5vw,44px)}
+    h2{font-size:clamp(22px,4vw,32px)}
+    h3{font-size:clamp(18px,3vw,22px)}
+    p{margin:.4rem 0 1rem}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    /* Nav */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #eee}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:.6rem;align-items:center;font-weight:800;color:var(--teal)}
+    .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--teal),#20c9c5)}
+    .nav a{text-decoration:none;font-weight:600;color:var(--gray-900)}
+    .menu{display:flex;gap:16px;align-items:center}
+    .cta{display:inline-block;padding:10px 16px;border-radius:999px;background:var(--teal);color:var(--white)!important;box-shadow:var(--shadow);text-decoration:none}
+    .cta:hover{background:var(--teal-700)}
+    /* Hero */
+    .hero{padding:72px 0;background:linear-gradient(180deg,var(--gray-100),#fff)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+    .pill{display:inline-block;padding:6px 12px;border-radius:999px;background:#E6FFFB;color:var(--teal-700);font-weight:600;font-size:12px;letter-spacing:.3px}
+    .sub{color:var(--gray-600);font-size:18px}
+    .badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px;color:var(--gray-600)}
+    .img-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#ddd;min-height:280px}
+    .hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn-secondary{display:inline-block;padding:10px 16px;border-radius:999px;border:2px solid var(--teal);color:var(--teal);text-decoration:none;font-weight:700}
+    .btn-secondary:hover{background:#ECFEFF}
+    /* Sections */
+    section{padding:56px 0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--white);border:1px solid #eee;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .list{display:grid;gap:8px}
+    .how{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .how .step{background:var(--white);border:1px dashed #cfe;border-radius:var(--radius);padding:16px}
+    .muted{color:var(--gray-600)}
+    .faq details{background:#FAFEFF;border:1px solid #DDF4FF;padding:14px;border-radius:12px;margin:8px 0}
+    .cta-bar{background:linear-gradient(90deg,var(--teal),#0BB3AB);color:#fff;border-radius:var(--radius);padding:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;box-shadow:var(--shadow)}
+    footer{background:var(--gray-100);padding:28px 0;color:var(--gray-600)}
+    /* Responsive */
+    @media (max-width: 920px){
+      .hero-grid{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .how{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 560px){
+      .how{grid-template-columns:1fr}
+      .nav .menu{display:none}
+      .hero{padding:56px 0}
+    }
+  </style>
+  <script>
+    // Smooth scroll for internal links
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const id = a.getAttribute('href');
+          if(id.length > 1){ e.preventDefault(); document.querySelector(id)?.scrollIntoView({behavior:'smooth'}); }
+        });
+      });
+    });
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MedicalBusiness",
+    "name":"ReabLar",
+    "medicalSpecialty":["Physiotherapy"],
+    "areaServed":"Belo Horizonte e região",
+    "url":"https://www.reablar.com.br/",
+    "logo":"/logo.png",
+    "slogan":"Reabilitação no conforto do lar",
+    "telephone":"+55-31-99644-1986",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Belo Horizonte",
+      "addressRegion":"MG",
+      "addressCountry":"BR"
+    },
+    "sameAs":[]
+  }
+  </script>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><span class="logo" aria-hidden="true"></span> ReabLar</a>
+      <div class="menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#sobre">Quem somos</a>
+        <a href="#faq">FAQ</a>
+        <a class="cta" href="https://wa.me/5531996441986?text=Ol%C3%A1%20ReabLar,%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill">Reabilitação no conforto do lar</span>
+        <h1>Fisioterapia domiciliar especializada em neurologia e geriatria</h1>
+        <p class="sub">Atendimento em BH e região, com avaliação em casa e plano de cuidado personalizado.</p>
+        <div class="badges"> <span>• Pós‑graduação em Neurofuncional</span> <span>• Orientação a familiares</span> <span>• Horários flexíveis</span> </div>
+        <div class="hero-buttons">
+          <a class="cta" href="https://wa.me/5531996441986?text=Ol%C3%A1%20ReabLar,%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn-secondary" href="#contato">Solicitar contato</a>
+        </div>
+      </div>
+      <div class="img-card" role="img" aria-label="Profissional de fisioterapia atendendo paciente em casa"></div>
+    </div>
+  </header>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="container">
+      <h2>Serviços</h2>
+      <p class="muted">Linhas de cuidado mais procuradas. Se precisar de algo específico, fale com a gente.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Neurofuncional</h3>
+          <p>Reabilitação pós‑AVC, Parkinson, TCE, esclerose múltipla e neuropatias. Foco em marcha, equilíbrio e autonomia.</p>
+        </div>
+        <div class="card">
+          <h3>Geriatria</h3>
+          <p>Prevenção de quedas, fortalecimento global, treino de mobilidade e orientação ao cuidador.</p>
+        </div>
+        <div class="card">
+          <h3>Pós‑operatório</h3>
+          <p>Protocolos por fase para joelho, quadril, ombro e coluna. Dor/edema, mobilidade, força e propriocepção.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" style="background:var(--gray-100)">
+    <div class="container">
+      <h2>Como funciona</h2>
+      <div class="how">
+        <div class="step"><strong>1) Contato</strong><br/>Chame no WhatsApp ou deixe seus dados no formulário.</div>
+        <div class="step"><strong>2) Avaliação</strong><br/>Visita em casa para entender histórico, ambiente e metas.</div>
+        <div class="step"><strong>3) Plano de cuidado</strong><br/>Frequência e objetivos definidos com você e sua família.</div>
+        <div class="step"><strong>4) Acompanhamento</strong><br/>Reavaliações periódicas e orientações para o dia a dia.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container">
+      <h2>Quem somos</h2>
+      <p><strong>Fernanda Meireles</strong> — Fisioterapeuta (PUC Minas, 2010) e pós‑graduada em Fisioterapia Neurofuncional (UFMG, 2017). Atendimentos domiciliares com foco em autonomia, segurança e qualidade de vida.</p>
+      <p class="muted">Atendemos Belo Horizonte e região metropolitana.</p>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS (placeholder) -->
+  <section id="depoimentos" style="background:var(--gray-100)">
+    <div class="container">
+      <h2>Depoimentos</h2>
+      <div class="cards">
+        <div class="card"><em>“A recuperação do meu pai avançou muito com as sessões em casa.”</em><br/>— M.R., filha de paciente pós‑AVC</div>
+        <div class="card"><em>“Reduzimos as quedas da minha mãe com treinos semanais.”</em><br/>— A.S., cuidador</div>
+        <div class="card"><em>“Atendimento humano, pontual e muito competente.”</em><br/>— R.L., paciente</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <details><summary>Quais regiões atendem?</summary><p>BH e cidades próximas. Consulte disponibilidade de horários via WhatsApp.</p></details>
+      <details><summary>Levam equipamentos?</summary><p>Levamos o essencial e adaptamos o plano aos recursos da sua casa.</p></details>
+      <details><summary>Emitimos recibo?</summary><p>Sim. Formas de pagamento a combinar; verifique reembolso com seu plano.</p></details>
+    </div>
+  </section>
+
+  <!-- CTA BAR -->
+  <section>
+    <div class="container">
+      <div class="cta-bar">
+        <strong>Pronto para agendar sua avaliação?</strong>
+        <a class="cta" href="https://wa.me/5531996441986?text=Ol%C3%A1%20ReabLar,%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" style="background:var(--gray-100)">
+    <div class="container">
+      <h2>Contato</h2>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531996441986" target="_blank" rel="noopener">(31) 99644‑1986</a><br/>
+      <strong>E‑mail:</strong> contato@reablar.com.br (quando ativarmos o e‑mail do domínio)</p>
+      <p class="muted">Horários: Segunda a sábado (consultar disponibilidade).</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+        <div>© <span id="year"></span> ReabLar — Reabilitação no conforto do lar.</div>
+        <div><a href="#top">Voltar ao topo</a></div>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
